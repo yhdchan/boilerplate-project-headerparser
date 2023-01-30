@@ -25,10 +25,10 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get("/api/whoami", function (req, res) {
-  const ipAddress = req.socket.remoteAddress;
+  const ipaddress = req.socket.remoteAddress;
   const language = req.headers["accept-language"];
   const software = req.headers["user-agent"];
-  res.send({ ipAddress, language, software });
+  res.send({ ipaddress, language, software });
 });
 
 // listen for requests :)
